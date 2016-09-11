@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>JS test</title>
+    <meta charset="GBK">
+</head>
+<body>
+<script  language="JavaScript">
+    var user = prompt("你猜猫叔在咱们没在家的时候做了什么？（做饭，看家或开冰箱）");
+    switch(user){
+        case "做饭":
+            var ms_cooking = prompt("猫叔做的能好吃吗？（是或否）");
+            if (ms_cooking == "是"){
+                var hh_perference = prompt("虎虎能爱吃吗？（是或否）");
+                if(hh_perference == "是"){
+                    alert("这俩家伙自己在家过的还不错啊！");
+                }else{
+                    alert("看来虎虎还饿着呢，快喂点鸡！");
+                }
+            }else{
+                alert("看来虎虎还饿着呢，快喂点鸡！");
+            }
+            break;
+        case "看家":
+            var knock = prompt("今天有人来送快递吗？（是或否）");
+            var fear = prompt("猫叔虎虎今天自己在家害怕吗？（是或否）");
+            if (knock === "是" || fear === "是" ){
+                alert("俩猫在家还是有点害怕，来电鸡压压惊！");
+            }
+            break;
+        case "开冰箱":
+            var cond = prompt("那猫叔打开没？（是/否）");
+            if (cond === "是"){
+                alert("那今晚不用喂猫叔鸡了");
+            }else{
+                alert("来，上木天蓼小鸡胸肉");
+            }
+            break;
+        default:
+            alert("那也不是没有可能，让咱们去问问猫叔。");
+    }
+</script>
+</body>
+</html>
